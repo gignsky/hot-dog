@@ -24,6 +24,11 @@ struct MusicPlayer {
     song: Signal<String>,
 }
 
+#[derive(serde::Deserialize)]
+struct DogApi {
+    message: String,
+}
+
 fn use_music_player_provider() {
     let song = use_signal(|| "Drift Away".to_string());
     use_context_provider(|| MusicPlayer { song });
@@ -67,9 +72,19 @@ pub fn DogView() -> Element {
     let skip = move |evt| {};
     // let save = move |evt| {};
     // let img_src = use_hook(|| "https://images.dog.ceo/breeds/pitbull/dog-3981540_1280.jpg");
-    let mut img_src = use_signal(|| "https://images.dog.ceo/breeds/pitbull/dog-3981540_1280.jpg");
-    let save = move |_| {
-        img_src.set("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*")
+    let mut img_src = use_signal(|| "".to_string());
+    // let save = move |_| {
+    //     img_src.set("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*")
+    // };
+    let fetch_new = move |_| async move {
+        let response = reqwest::get("https://dog.ceo/api/breeds/image/random")
+            .await
+            .unwrap()
+            .json::<DogApi>()
+            .await
+            .unwrap();
+
+        img_src.set(response.message);
     };
 
     rsx! {
@@ -81,7 +96,7 @@ pub fn DogView() -> Element {
         div {
             id: "buttons",
             button { onclick: skip, id: "skip", "skip" }
-            button { onclick: save, id: "save", "save!" }
+            button { onclick: fetch_new, id: "save", "save!" }
         }
     }
 }
