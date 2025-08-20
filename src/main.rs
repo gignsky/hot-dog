@@ -14,8 +14,12 @@ fn main() {
     dioxus::launch(App);
 }
 
+#[derive(Clone)]
+struct TitleState(String);
+
 #[component]
 fn App() -> Element {
+    use_context_provider(|| TitleState("HotDawg! 🌭".to_string()));
     rsx! {
         document::Stylesheet{href: MAIN_CSS}
         Title {}
@@ -25,10 +29,11 @@ fn App() -> Element {
 
 #[component]
 fn Title() -> Element {
+    let title = use_context::<TitleState>();
     rsx! {
         div {
             id: "title",
-            h1 { "HotDawg! 🌭"}
+            h1 { "{title.0}"}
         }
     }
 }
