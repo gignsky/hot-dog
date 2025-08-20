@@ -1,10 +1,9 @@
 _: {
   perSystem =
-    {
-      config,
-      self',
-      pkgs,
-      ...
+    { config
+    , self'
+    , pkgs
+    , ...
     }:
     {
       devShells.default = pkgs.mkShell {
@@ -28,6 +27,23 @@ _: {
           # dioxus and deps
           dioxus-cli
           wasm-bindgen-cli
+
+          ## tauri deps
+          gobject-introspection
+          pkg-config
+          at-spi2-atk
+          atkmm
+          cairo
+          gdk-pixbuf
+          glib
+          gtk3
+          harfbuzz
+          librsvg
+          libsoup_3
+          pango
+          webkitgtk_4_1
+          openssl
+          xdotool
 
           # utilities
           gitflow
