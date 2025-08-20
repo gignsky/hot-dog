@@ -1,3 +1,4 @@
+use crate::backend::save_dog;
 use dioxus::prelude::*;
 
 const MAIN_CSS: Asset = asset!("/assets/main.css");
@@ -58,13 +59,6 @@ fn Title() -> Element {
 
 #[component]
 pub fn DogView() -> Element {
-    // let skip = move |evt| {};
-    // let save = move |evt| {};
-    // let img_src = use_hook(|| "https://images.dog.ceo/breeds/pitbull/dog-3981540_1280.jpg");
-    // let mut img_src = use_signal(|| "".to_string());
-    // let save = move |_| {
-    //     img_src.set("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*")
-    // };
     let mut img_src = use_resource(|| async move {
         reqwest::get("https://dog.ceo/api/breeds/image/random")
             .await
@@ -84,7 +78,11 @@ pub fn DogView() -> Element {
         div {
             id: "buttons",
             button { onclick: move |_| img_src.restart(), id: "skip", "skip" },
-            button { onclick: move |_| img_src.restart(), id: "save", "save!" }
+            button { onclick: move |_| async move {
+                let current = img_src.cloned().unwrap();
+                img_src.restart();
+                _ = save_dog(current).await;
+            }, id: "save", "save!" }
         }
     }
 }
