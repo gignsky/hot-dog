@@ -1,11 +1,13 @@
 use dioxus::prelude::*;
 
 static CSS: Asset = asset!("/assets/main.css");
+static ICON: Asset = asset!("/assets/favicon.ico");
 
 #[component]
 pub fn App() -> Element {
     rsx! {
         document::Stylesheet{href: CSS}
+        // img {src: ICON}
 
         div {
             id: "title",
