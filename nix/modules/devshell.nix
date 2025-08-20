@@ -27,6 +27,7 @@ _: {
           # dioxus and deps
           dioxus-cli
           wasm-bindgen-cli
+          sqlite
 
           ## tauri deps
           gobject-introspection
