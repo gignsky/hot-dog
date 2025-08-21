@@ -3,7 +3,8 @@ use crate::*;
 
 #[component]
 pub fn Favorites() -> Element {
-    let favorites = use_resource(list_dogs).suspend()?;
+    let mut favorites_resource = use_resource(list_dogs);
+    let favorites = favorites_resource.suspend()?;
     rsx! {
         div {
             id: "favorites",
@@ -17,6 +18,7 @@ pub fn Favorites() -> Element {
                         button {
                             onclick: move |_| async move {
                                 _ = del_dog(ident).await;
+                                favorites_resource.restart();
                             },
                             "❌"
                         }
