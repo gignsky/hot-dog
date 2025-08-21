@@ -1,5 +1,5 @@
 use crate::backend::save_dog;
-use dioxus::prelude::*;
+use crate::*;
 
 #[derive(serde::Deserialize)]
 struct DogApi {

@@ -2,8 +2,10 @@ use dioxus::prelude::*;
 
 mod backend;
 mod components;
+mod router;
 
 use crate::components::*;
+use crate::router::*;
 
 // const FAVICON: Asset = asset!("/assets/favicon.ico");
 // const HEADER_SVG: Asset = asset!("/assets/header.svg");

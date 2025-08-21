@@ -4,9 +4,6 @@ use dioxus::prelude::*;
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 static SONG: GlobalSignal<String> = Signal::global(|| "Drift Away".to_string());
 
-#[derive(Clone)]
-struct TitleState(String);
-
 #[allow(dead_code)]
 #[derive(Clone, Copy)]
 struct MusicPlayer {
@@ -20,7 +17,6 @@ fn use_music_player_provider() {
 
 #[component]
 pub fn userInterface() -> Element {
-    use_context_provider(|| TitleState("HotDawg! 🌭".to_string()));
     use_music_player_provider();
     rsx! {
         document::Stylesheet{href: MAIN_CSS}
@@ -37,17 +33,6 @@ fn Player() -> Element {
         button {
             onclick: move |_| *SONG.write() = "Vienna".to_string(),
             "Shuffle"
-        }
-    }
-}
-
-#[component]
-fn Title() -> Element {
-    let title = use_context::<TitleState>();
-    rsx! {
-        div {
-            id: "title",
-            h1 { "{title.0}"}
         }
     }
 }

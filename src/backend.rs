@@ -27,44 +27,17 @@ pub async fn save_dog(image: String) -> Result<(), ServerFnError> {
     Ok(())
 }
 
-// Documentation:
-// // on the Client:
-// #[server]
-// async fn save_dog(image: String) -> Result<(), ServerFnError> {
-//     Ok(())
-// }
-//
-// // expanded
-// async fn save_dog(image: String) -> Result<(), ServerFnError> {
-//     reqwest::Client::new()
-//         .post("http://localhost:8080/api/save_dog")
-//         .json(&image)
-//         .send()
-//         .await?;
-//
-//     Ok(())
-// }
-//
-// // on the server:
-// struct SaveDogArgs {
-//     image: String,
-// }
-//
-// async fn save_dog(Json(args): Json<SaveDogArgs>) -> Result<(), ServerFnError> {
-//     Ok(())
-// }
-//
-// // // ❌ this will leak your DB_PASSWORD to your client app!
-// // static DB_PASSWORD: &str = "1234";
-// //
-// // #[server]
-// // async fn DoThing() -> Result<(), ServerFnError> {
-// //     connect_to_db(DB_PASSWORD).await
-// //     // ...
-// // }
-//
-// // ✅ code in this module can only be accessed on the server
-// #[cfg(feature = "server")]
-// mod server_utils {
-//     pub static DB_PASSWORD: &str = "1234";
-// }
+// Expose a `list_dogs` endpoint on our server that gives a list of dogs saved and their images
+#[server]
+pub async fn list_dogs() -> Result<Vec<(usize, String)>, ServerFnError> {
+    let dogs = DB.with(|f| {
+        f.prepare("SELECT id, url FROM dogs ORDER BY id DESC LIMIT 10")
+            .unwrap()
+            .query_map([], |row| Ok((row.get(0)?, row.get(1)?)))
+            .unwrap()
+            .map(|r| r.unwrap())
+            .collect()
+    });
+
+    Ok(dogs)
+}
