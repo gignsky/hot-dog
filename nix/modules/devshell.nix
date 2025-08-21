@@ -48,6 +48,7 @@ _: {
 
           # utilities
           gitflow
+          git-lfs
 
           # # gigdot programs
           # inputs.gigdot.packages.${system}.quick-results
