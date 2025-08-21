@@ -39,11 +39,17 @@ jobs:
       - name: Show Nix version
         run: nix --version
 
-      - name: Show rustc version (Should Fail)
-        run: rustc --version
+      - name: Install direnv
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y direnv
+
+      - name: Enable direnv in shell
+        run: |
+          echo 'eval "$(direnv hook bash)"' >> $GITHUB_ENV
+          
+      - name: Run direnv allow in repo directory
+        run: direnv allow
 
       - name: Enter nix shell
-        run: nix develop
-
-      - name: Show rustc version
-        run: rustc --version
+        run: nix develop -c nix flake check --print-build-logs
