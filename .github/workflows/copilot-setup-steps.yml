@@ -31,25 +31,18 @@ jobs:
           lfs: true
 
       - name: Install Nix
-        uses: cachix/install-nix-action@v25
+        uses: cachix/install-nix-action@v31
         with:
-          extra_nix_config: |
-            experimental-features = nix-command flakes
+          nix_path: https://github.com/NixOS/nixpkgs/archive/master.tar.gz
+          enable_kvm: true
+          set_as_trusted_user: true
+
+      - name: Print nixpkgs version
+        run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
 
       - name: Show Nix version
         run: nix --version
 
-      - name: Install direnv
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y direnv
-
-      - name: Enable direnv in shell
-        run: |
-          echo 'eval "$(direnv hook bash)"' >> $GITHUB_ENV
-          
-      - name: Run direnv allow in repo directory
-        run: direnv allow
-
-      - name: Enter nix shell
-        run: nix develop -c nix flake check --print-build-logs
+      - name: Enter nix shell and check flake
+        shell: 'nix develop -c base -e {0}'
+        run: nix flake check --print-build-logs
