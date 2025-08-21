@@ -34,5 +34,4 @@ inherits = "dev"
 [profile.android-dev]
 inherits = "dev"
 
-[package.metadata.wasm-pack.profile.release]
-wasm-opt = ["--enable-bulk-memory", "--enable-nontrapping-float-to-int"]
+
