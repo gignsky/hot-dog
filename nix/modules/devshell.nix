@@ -29,7 +29,12 @@ _: {
           wasm-bindgen-cli
           sqlite
 
+          ## dioxus bundling deps
+          # binaryen
+
           ## tauri deps
+          cargo-tauri
+          cargo
           gobject-introspection
           pkg-config
           at-spi2-atk
@@ -45,6 +50,7 @@ _: {
           webkitgtk_4_1
           openssl
           xdotool
+          wasm-pack
 
           # utilities
           gitflow
