@@ -2,7 +2,6 @@ use dioxus::prelude::*;
 
 mod backend;
 mod components;
-mod frontend;
 
 use crate::components::*;
 
@@ -16,6 +15,8 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-        frontend::userInterface {}
+        document::Stylesheet { href: asset!("/assets/main.css") }
+
+        Router::<Route> {}
     }
 }
