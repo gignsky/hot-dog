@@ -46,3 +46,15 @@ jobs:
       - name: Enter nix shell and check flake
         shell: 'nix develop -c base -e {0}'
         run: nix flake check --print-build-logs
+
+      - name: Check dioxus
+        shell: 'nix develop -c base -e {0}'
+        run: dx check
+
+      - name: Bundle dioxus - web
+        shell: 'nix develop -c base -e {0}'
+        run: dx bundle --platform web
+
+      - name: Bundle dioxus - desktop
+        shell: 'nix develop -c base -e {0}'
+        run: dx bundle --platform desktop
