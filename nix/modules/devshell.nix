@@ -23,6 +23,7 @@ _: {
           clippy
           bacon
           config.process-compose.cargo-doc-live.outputs.package
+          cargo-binstall
 
           # dioxus and deps
           dioxus-cli
