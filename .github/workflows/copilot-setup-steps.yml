@@ -48,10 +48,10 @@ jobs:
         shell: 'nix develop -c bash -e {0}'
         run: dx check
 
-      # - name: Bundle dioxus - web
-      #   shell: 'nix develop -c bash -e {0}'
-      #   run: dx bundle --platform web
-      #
-      # - name: Bundle dioxus - desktop
-      #   shell: 'nix develop -c bash -e {0}'
-      #   run: dx bundle --platform desktop
+      - name: Bundle dioxus - web
+        shell: 'nix develop -c bash -e {0}'
+        run: dx bundle --platform web
+
+      - name: Bundle dioxus - desktop
+        shell: 'nix develop -c bash -e {0}'
+        run: dx bundle --platform desktop
