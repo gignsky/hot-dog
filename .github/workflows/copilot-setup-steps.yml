@@ -37,8 +37,8 @@ jobs:
           enable_kvm: true
           set_as_trusted_user: true
 
-      - name: Print nixpkgs version
-        run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
+      # - name: Print nixpkgs version
+      #   run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
 
       - name: Show Nix version
         run: nix --version
