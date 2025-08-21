@@ -2,6 +2,7 @@ use dioxus::prelude::*;
 
 mod backend;
 mod components;
+mod frontend;
 
 use crate::components::*;
 
