@@ -23,8 +23,8 @@ script = []
 [bundle]
 identifier = "dev.giglab"
 publisher = "giglab"
-icons = [
-  "./icons/icon.png",
-  "./icons/icon.ico",
-  "./icons/icon.icns",
+icon = [
+  "icons/icon.png",
+  "icons/icon.ico",
+  "icons/icon.icns",
 ]
