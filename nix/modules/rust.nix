@@ -6,14 +6,4 @@
     inputs.process-compose-flake.flakeModule
     inputs.cargo-doc-live.flakeModule
   ];
-  perSystem = { self', pkgs, lib, ... }: {
-    rust-project.crates."hot_dog".crane.args = {
-      buildInputs = lib.optionals pkgs.stdenv.isDarwin (
-        with pkgs.darwin.apple_sdk.frameworks; [
-          IOKit
-        ]
-      );
-    };
-    packages.default = self'.packages.hot_dog;
-  };
 }
