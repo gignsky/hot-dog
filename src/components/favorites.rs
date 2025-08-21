@@ -1,4 +1,4 @@
-use crate::backend::{del_dog, list_dogs};
+use crate::backend::{del_all, del_dog, list_dogs};
 use crate::*;
 
 #[component]
@@ -10,6 +10,20 @@ pub fn Favorites() -> Element {
             id: "favorites",
             div {
                 id: "favorites-container",
+                div {
+                    id: "delete-all",
+                    button {
+                        onclick: move |_| async move {
+                            _ = del_all().await;
+                            favorites_resource.restart();
+                            // Link {
+                            //     id: "back-to-home",
+                            //     to: Route::DogView,
+                            // };
+                        },
+                        "Remove ALL Favorites!!!"
+                    },
+                }
                 for (ident, url) in favorites().unwrap() {
                     div {
                         key: "{ident}",

@@ -31,7 +31,7 @@ pub async fn save_dog(image: String) -> Result<(), ServerFnError> {
 #[server]
 pub async fn list_dogs() -> Result<Vec<(usize, String)>, ServerFnError> {
     let dogs = DB.with(|f| {
-        f.prepare("SELECT id, url FROM dogs ORDER BY id DESC LIMIT 10")
+        f.prepare("SELECT id, url FROM dogs ORDER BY id DESC LIMIT 100")
             .unwrap()
             .query_map([], |row| Ok((row.get(0)?, row.get(1)?)))
             .unwrap()
@@ -43,8 +43,14 @@ pub async fn list_dogs() -> Result<Vec<(usize, String)>, ServerFnError> {
 }
 
 #[server]
+pub async fn del_all() -> Result<(), ServerFnError> {
+    let _dogs = DB.with(|f| f.execute("DELETE FROM dogs", [])).unwrap();
+    Ok(())
+}
+
+#[server]
 pub async fn del_dog(ident: usize) -> Result<(), ServerFnError> {
-    let dogs = DB
+    let _dogs = DB
         .with(|f| f.execute("DELETE FROM dogs WHERE id = ?1", [ident]))
         .unwrap();
     Ok(())
