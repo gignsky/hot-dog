@@ -41,3 +41,11 @@ pub async fn list_dogs() -> Result<Vec<(usize, String)>, ServerFnError> {
 
     Ok(dogs)
 }
+
+#[server]
+pub async fn del_dog(ident: usize) -> Result<(), ServerFnError> {
+    let dogs = DB
+        .with(|f| f.execute("DELETE FROM dogs WHERE id = ?1", [ident]))
+        .unwrap();
+    Ok(())
+}

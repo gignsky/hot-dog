@@ -1,8 +1,9 @@
+use crate::backend::{del_dog, list_dogs};
 use crate::*;
 
 #[component]
 pub fn Favorites() -> Element {
-    let favorites = use_resource(super::super::backend::list_dogs).suspend()?;
+    let favorites = use_resource(list_dogs).suspend()?;
     rsx! {
         div {
             id: "favorites",
@@ -12,7 +13,13 @@ pub fn Favorites() -> Element {
                     div {
                         key: "{ident}",
                         class: "favorite-dog",
-                        img { src: "{url}" }
+                        img { src: "{url}" },
+                        button {
+                            onclick: move |_| async move {
+                                _ = del_dog(ident).await;
+                            },
+                            "❌"
+                        }
                     }
                 }
             }
