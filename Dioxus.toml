@@ -19,3 +19,12 @@ script = []
 # Javascript code file
 # serve: [dev-server] only
 script = []
+
+[bundle]
+identifier = "dev.giglab"
+publisher = "giglab"
+icons = [
+  "./icons/icon.png",
+  "./icons/icon.ico",
+  "./icons/icon.icns",
+]
