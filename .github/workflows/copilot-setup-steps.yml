@@ -40,9 +40,9 @@ jobs:
       - name: Show Nix version
         run: nix --version
 
-      - name: Enter nix shell and check flake
-        shell: 'nix develop -c bash -e {0}'
-        run: nix flake check --print-build-logs
+      # - name: Enter nix shell and check flake
+      #   shell: 'nix develop -c bash -e {0}'
+      #   run: nix flake check --print-build-logs
 
       - name: Check dioxus
         shell: 'nix develop -c bash -e {0}'
