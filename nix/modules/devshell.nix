@@ -31,7 +31,7 @@ _: {
           sqlite
 
           ## dioxus bundling deps
-          # binaryen
+          binaryen
 
           ## tauri deps
           cargo-tauri
