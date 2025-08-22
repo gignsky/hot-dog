@@ -20,6 +20,7 @@
           "rust-analyzer"
           "clippy"
         ];
+        targets = [ "wasm32-unknown-unknown" ];
       };
 
       rustBuildInputs = [
@@ -28,6 +29,7 @@
         pkgs.libiconv
         pkgs.pkg-config
         pkgs.sqlite
+        pkgs.wasm-bindgen-cli
       ]
       ++ lib.optionals pkgs.stdenv.isLinux [
         pkgs.lld
