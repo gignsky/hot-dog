@@ -24,16 +24,15 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1733543648,
-        "narHash": "sha256-MeYjPyGOQD5AkXj0v64eP+HokMvX4+EJ16bjNk9QQBM=",
+        "lastModified": 1755834002,
+        "narHash": "sha256-purGg9sEokK1f5lAjJKlyoNwUTk+zG7yoRqY//gmjzc=",
         "owner": "DioxusLabs",
         "repo": "dioxus",
-        "rev": "30f760ca1503a10694fee1cd345de8d0174d14c5",
+        "rev": "969ad1d6bb381ff488c609f8a46ac3e92d0e52e7",
         "type": "github"
       },
       "original": {
         "owner": "DioxusLabs",
-        "ref": "v0.6",
         "repo": "dioxus",
         "type": "github"
       }
