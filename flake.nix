@@ -1,13 +1,14 @@
 {
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
     };
     systems.url = "github:nix-systems/default";
-    rust-flake = {
-      url = "github:juspay/rust-flake";
+    
+    rust-overlay.url = "github:oxalica/rust-overlay";
+    dioxus = {
+      url = "github:DioxusLabs/dioxus";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
