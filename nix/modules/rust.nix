@@ -26,8 +26,11 @@
         pkgs.openssl
         pkgs.libiconv
         pkgs.pkg-config
+        pkgs.sqlite
       ]
       ++ lib.optionals pkgs.stdenv.isLinux [
+        pkgs.lld
+        pkgs.gcc
         pkgs.glib
         pkgs.gtk3
         pkgs.libsoup_3
