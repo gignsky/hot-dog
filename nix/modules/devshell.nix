@@ -34,6 +34,7 @@ _: {
           binaryen
 
           ## tauri deps
+          nodejs
           cargo-tauri
           cargo
           gobject-introspection
