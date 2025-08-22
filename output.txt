@@ -1,0 +1,520 @@
+[2m   0. 0s[0m [32m INFO[0m [2mdx::cli::bundle[0m[2m:[0m Bundling project...
+[2m   0. 0s[0m [34mDEBUG[0m [2mdx::dioxus_crate[0m[2m:[0m Loading crate
+[2m   0.184s[0m [34mDEBUG[0m [2mdx::dioxus_crate[0m[2m:[0m Found package NodeIndex(88)
+[2m   0.184s[0m [32m INFO[0m [2mdx::cli::bundle[0m[2m:[0m Building app...
+[2m   0.185s[0m [34mDEBUG[0m [2mdx::build::verify[0m[2m:[0m Verifying tooling...
+[2m   0.217s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Running build command... 
+[2m   0.217s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Building app...
+[2m   0.218s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Initialized Root dir: "/home/gig/local_repos/hot_dog/target/dx/hot_dog/release/web/public"
+[2m   0.218s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Initialized Exe dir: "/home/gig/local_repos/hot_dog/target/dx/hot_dog/release/web/public/wasm"
+[2m   0.218s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Initialized Asset dir: "/home/gig/local_repos/hot_dog/target/dx/hot_dog/release/web/public/assets"
+[2m   0.218s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Executing cargo...
+[2m   0.218s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m cargo args: ["--profile", "release", "--target", "wasm32-unknown-unknown", "--verbose", "--features", "web", "--bin", "hot_dog"] dx_src=build
+[2m   0.220s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Building server...
+[2m   0.221s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Building app...
+[2m   0.221s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Executing cargo...
+[2m   0.221s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m cargo args: ["--profile", "release", "--verbose", "--features", "server", "--bin", "hot_dog"] dx_src=build
+[2m   0.259s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m cargo args: ["--profile", "release", "--target", "wasm32-unknown-unknown", "--verbose", "--features", "web", "--bin", "hot_dog"] dx_src=build
+[2m   0.261s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m cargo args: ["--profile", "release", "--verbose", "--features", "server", "--bin", "hot_dog"] dx_src=build
+[2m   0.522s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  1/339]: build-script-build
+[2m   0.522s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  2/339]: unicode_ident
+[2m   0.522s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  4/339]: cfg_if
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  5/339]: once_cell
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  6/339]: build-script-build
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  7/339]: build-script-build
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  8/339]: build-script-build
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  9/339]: bumpalo
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 10/339]: log
+[2m   0.523s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 11/339]: autocfg
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 12/339]: version_check
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 13/339]: futures_core
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 14/339]: proc_macro2
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 18/339]: build-script-build
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 19/339]: smallvec
+[2m   0.524s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 20/339]: pin_project_lite
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 21/339]: memchr
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 22/339]: unicode_xid
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 23/339]: futures_sink
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 24/339]: build-script-build
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 25/339]: tracing_core
+[2m   0.525s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 26/339]: quote
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 27/339]: rustversion
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 28/339]: wasm_bindgen_shared
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 30/339]: futures_channel
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 31/339]: build-script-build
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 33/339]: slab
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 34/339]: pin_utils
+[2m   0.526s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 35/339]: scopeguard
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 36/339]: futures_task
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 37/339]: futures_io
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 38/339]: syn
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 39/339]: const_format_proc_macros
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 41/339]: stable_deref_trait
+[2m   0.527s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 42/339]: lock_api
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 43/339]: dioxus_core_types
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 44/339]: build-script-build
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 45/339]: rustc_hash
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 46/339]: build-script-build
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 47/339]: unicode_segmentation
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 48/339]: itoa
+[2m   0.528s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 49/339]: longest_increasing_subsequence
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 50/339]: serde_derive
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 51/339]: wasm_bindgen_backend
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 52/339]: synstructure
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 53/339]: futures_macro
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 54/339]: tracing_attributes
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 55/339]: parking_lot_core
+[2m   0.529s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 56/339]: pin_project_internal
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 57/339]: zerovec_derive
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 58/339]: displaydoc
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 59/339]: warnings_macro
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 60/339]: const_format
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 62/339]: serde
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 63/339]: wasm_bindgen_macro_support
+[2m   0.530s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 64/339]: zerofrom_derive
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 65/339]: yoke_derive
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 66/339]: futures_util
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 67/339]: tracing
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 68/339]: pin_project
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 69/339]: parking_lot
+[2m   0.531s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 70/339]: convert_case
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 71/339]: lazy_js_bundle
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 72/339]: build-script-build
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 73/339]: ryu
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 74/339]: wasm_bindgen_macro
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 75/339]: zerofrom
+[2m   0.532s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 76/339]: slotmap
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 77/339]: generational_box
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 78/339]: warnings
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 80/339]: ident_case
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 81/339]: writeable
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 82/339]: litemap
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 83/339]: fnv
+[2m   0.533s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 84/339]: build-script-build
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 85/339]: build-script-build
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 86/339]: wasm_bindgen
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 87/339]: yoke
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 88/339]: dioxus_core
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 89/339]: serde_json
+[2m   0.534s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 90/339]: darling_core
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 94/339]: build-script-build
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 96/339]: unicode_ident
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 97/339]: percent_encoding
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 98/339]: zerovec
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 99/339]: js_sys
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [100/339]: zerotrie
+[2m   0.535s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [101/339]: darling_macro
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [102/339]: icu_normalizer_data
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [103/339]: proc_macro2_diagnostics
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [105/339]: icu_properties_data
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [106/339]: dioxus_signals
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [107/339]: proc_macro2
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [108/339]: bitflags
+[2m   0.536s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [109/339]: dioxus_cli_config
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [110/339]: tinystr
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [111/339]: potential_utf
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [112/339]: web_sys
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [113/339]: darling
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [114/339]: wasm_bindgen_futures
+[2m   0.537s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [115/339]: num_traits
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [116/339]: dioxus_rsx
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [117/339]: keyboard_types
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [118/339]: dioxus_hooks
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [119/339]: quote
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [120/339]: form_urlencoded
+[2m   0.538s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [121/339]: build-script-build
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [122/339]: icu_locale_core
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [123/339]: icu_collections
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [124/339]: enumset_derive
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [125/339]: euclid
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [126/339]: dioxus_core_macro
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [127/339]: dioxus_html_internal_macro
+[2m   0.539s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [128/339]: async_trait
+[2m   0.540s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Build completed successfully - output location: "/home/gig/local_repos/hot_dog/target/wasm32-unknown-unknown/release/hot_dog.wasm"
+[2m   0.540s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [129/339]: const_serialize_macro
+[2m   0.540s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Collecting assets ...
+[2m   0.540s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [130/339]: build-script-build
+[2m   0.540s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [131/339]: build-script-build
+[2m   0.540s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [132/339]: utf8_iter
+[2m   0.540s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [134/339]: icu_provider
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [135/339]: enumset
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [138/339]: syn
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [139/339]: const_format
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [140/339]: thiserror_impl
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [142/339]: fnv
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [143/339]: bytes
+[2m   0.541s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [144/339]: xxhash_rust
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [145/339]: dioxus_history
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [146/339]: icu_properties
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [147/339]: icu_normalizer
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [148/339]: dioxus_html
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [149/339]: server_fn_macro
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [150/339]: serde
+[2m   0.542s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [151/339]: proc_macro2_diagnostics
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [152/339]: thiserror
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [153/339]: http
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [154/339]: build-script-build
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [155/339]: sledgehammer_bindgen_macro
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [156/339]: half
+[2m   0.543s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [157/339]: ciborium_io
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [158/339]: idna_adapter
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [159/339]: dioxus_document
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [160/339]: lazy_static
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [161/339]: ciborium_ll
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [162/339]: sledgehammer_bindgen
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [164/339]: const_serialize
+[2m   0.544s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [165/339]: dioxus_rsx
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [166/339]: gloo_utils
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [167/339]: dioxus_devtools_types
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [168/339]: build-script-build
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [169/339]: futures_executor
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [170/339]: idna
+[2m   0.545s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [171/339]: sharded_slab
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [172/339]: sledgehammer_utils
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [173/339]: dioxus_config_macro
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [174/339]: thread_local
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [175/339]: hashbrown
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [176/339]: gloo_net
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [177/339]: ciborium
+[2m   0.546s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [178/339]: futures
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [180/339]: dioxus_devtools
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [181/339]: manganis_core
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [182/339]: url
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [183/339]: dashmap
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [184/339]: tracing_subscriber
+[2m   0.547s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [185/339]: dioxus_lib
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [186/339]: dioxus_interpreter_js
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [187/339]: serde_qs
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [188/339]: server_fn_macro_default
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [189/339]: const_serialize
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [190/339]: wasm_streams
+[2m   0.548s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [191/339]: serde_wasm_bindgen
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [192/339]: send_wrapper
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [193/339]: xxhash_rust
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [194/339]: base64
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [195/339]: dunce
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [196/339]: slab
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [197/339]: dioxus_web
+[2m   0.549s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [198/339]: tracing_wasm
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [199/339]: manganis_core
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [200/339]: server_fn
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [201/339]: dioxus_server_macro
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [202/339]: console_error_panic_hook
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [203/339]: urlencoding
+[2m   0.550s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [204/339]: serde_urlencoded
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [205/339]: sync_wrapper
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [206/339]: manganis_macro
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [207/339]: dioxus_router_macro
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [208/339]: dioxus_logger
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [209/339]: dioxus_fullstack
+[2m   0.551s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [210/339]: tower_service
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [211/339]: dioxus_router
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [212/339]: manganis
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [213/339]: reqwest
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [214/339]: dioxus
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  1/339]: build-script-build
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  2/339]: unicode_ident
+[2m   0.552s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  4/339]: once_cell
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  5/339]: cfg_if
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  6/339]: build-script-build
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  7/339]: pin_project_lite
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  8/339]: version_check
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [  9/339]: futures_core
+[2m   0.553s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 10/339]: log
+[2m   0.554s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 11/339]: memchr
+[2m   0.554s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 12/339]: futures_sink
+[2m   0.554s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 13/339]: pin_utils
+[2m   0.554s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 14/339]: proc_macro2
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 16/339]: futures_channel
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 17/339]: slab
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 18/339]: futures_task
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 19/339]: futures_io
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 20/339]: tracing_core
+[2m   0.555s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 21/339]: itoa
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 22/339]: build-script-build
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 23/339]: smallvec
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 24/339]: bytes
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 25/339]: autocfg
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 26/339]: quote
+[2m   0.556s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 27/339]: libc
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 29/339]: build-script-build
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 30/339]: fnv
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 31/339]: unicode_xid
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 32/339]: build-script-build
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 33/339]: build-script-build
+[2m   0.557s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 34/339]: stable_deref_trait
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 35/339]: scopeguard
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 36/339]: build-script-build
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 37/339]: dioxus_core_types
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 38/339]: syn
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 40/339]: http
+[2m   0.558s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 41/339]: const_format_proc_macros
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 44/339]: mio
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 45/339]: socket2
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 46/339]: build-script-build
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 47/339]: build-script-build
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 48/339]: build-script-build
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 49/339]: bitflags
+[2m   0.559s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 50/339]: futures_macro
+[2m   0.560s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 51/339]: serde_derive
+[2m   0.560s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 52/339]: tracing_attributes
+[2m   0.560s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 53/339]: rustversion
+[2m   0.560s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 54/339]: synstructure
+[2m   0.560s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 55/339]: pin_project_internal
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 56/339]: lock_api
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 57/339]: parking_lot_core
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 58/339]: tokio_macros
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 59/339]: zerovec_derive
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 60/339]: displaydoc
+[2m   0.561s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 61/339]: foldhash
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 62/339]: futures_util
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 63/339]: tracing
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 64/339]: serde
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 65/339]: zerofrom_derive
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 66/339]: pin_project
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 67/339]: yoke_derive
+[2m   0.562s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 68/339]: tokio
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 69/339]: equivalent
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 70/339]: allocator_api2
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 71/339]: parking_lot
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 72/339]: const_format
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 74/339]: zerofrom
+[2m   0.563s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 75/339]: hashbrown
+[2m   0.564s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Build completed successfully - output location: "/home/gig/local_repos/hot_dog/target/release/hot_dog"
+[2m   0.564s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 77/339]: warnings_macro
+[2m   0.564s[0m [34mDEBUG[0m [2mdx::build::request[0m[2m:[0m Collecting assets ...
+[2m   0.564s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 80/339]: build-script-build
+[2m   0.564s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 81/339]: vcpkg
+[2m   0.564s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 82/339]: rustc_hash
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 83/339]: pkg_config
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 84/339]: generational_box
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 85/339]: httparse
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 86/339]: yoke
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 87/339]: slotmap
+[2m   0.565s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 88/339]: warnings
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 90/339]: wasm_bindgen_shared
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 91/339]: typenum
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 92/339]: build-script-build
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 93/339]: log
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 94/339]: bumpalo
+[2m   0.566s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 95/339]: ryu
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 96/339]: build-script-build
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 97/339]: unicode_segmentation
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 98/339]: zerovec
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [ 99/339]: build-script-build
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [100/339]: build-script-build
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [101/339]: longest_increasing_subsequence
+[2m   0.567s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [102/339]: percent_encoding
+[2m   0.568s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [103/339]: generic_array
+[2m   0.568s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [104/339]: convert_case
+[2m   0.568s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [106/339]: wasm_bindgen_backend
+[2m   0.568s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [107/339]: thiserror_impl
+[2m   0.568s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [108/339]: http_body
+[2m   0.569s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [109/339]: tower_service
+[2m   0.569s[0m [34mDEBUG[0m [2mdx::build::bundle[0m[2m:[0m Assembling app bundle
+[2m   0.569s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [110/339]: tinystr
+[2m   0.569s[0m [34mDEBUG[0m [2mdx::build::bundle[0m[2m:[0m Running wasm-bindgen dx_src=bundle
+[2m   0.569s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [112/339]: dioxus_core
+[2m   0.569s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [114/339]: writeable
+[2m   0.569s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [115/339]: litemap
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [116/339]: serde_json
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [117/339]: wasm_bindgen_macro_support
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [118/339]: potential_utf
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [119/339]: zerotrie
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [120/339]: tokio_util
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [121/339]: getrandom
+[2m   0.570s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [122/339]: thiserror
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [123/339]: zerocopy
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [124/339]: icu_locale_core
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [125/339]: build-script-build
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [126/339]: build-script-build
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [127/339]: fnv
+[2m   0.571s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [128/339]: build-script-build
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [129/339]: build-script-build
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [130/339]: shlex
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [131/339]: ident_case
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [132/339]: rand_core
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [133/339]: wasm_bindgen_macro
+[2m   0.572s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [137/339]: cc
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [138/339]: icu_provider
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [139/339]: darling_core
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [141/339]: ppv_lite86
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [142/339]: icu_collections
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [143/339]: crypto_common
+[2m   0.573s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [144/339]: block_buffer
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [145/339]: tower_layer
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [146/339]: lazy_js_bundle
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [147/339]: darling_macro
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [148/339]: wasm_bindgen
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [149/339]: digest
+[2m   0.574s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [150/339]: icu_properties_data
+[2m   0.575s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [151/339]: num_traits
+[2m   0.575s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [152/339]: build-script-main
+[2m   0.575s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [153/339]: icu_normalizer_data
+[2m   0.575s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [154/339]: rand_chacha
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [156/339]: indexmap
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [157/339]: async_trait
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [159/339]: mime
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [160/339]: unicode_ident
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [161/339]: try_lock
+[2m   0.576s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [162/339]: atomic_waker
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [163/339]: cpufeatures
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [164/339]: httpdate
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [165/339]: proc_macro2_diagnostics
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [166/339]: darling
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [167/339]: icu_normalizer
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [168/339]: icu_properties
+[2m   0.577s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [169/339]: rand
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [170/339]: want
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [171/339]: h2
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [172/339]: proc_macro2
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [173/339]: sha1
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [175/339]: js_sys
+[2m   0.578s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [176/339]: dioxus_signals
+[2m   0.579s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [177/339]: http_body_util
+[2m   0.579s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [178/339]: form_urlencoded
+[2m   0.579s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [179/339]: sync_wrapper
+[2m   0.579s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [180/339]: byteorder
+[2m   0.579s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [181/339]: utf8
+[2m   0.580s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [182/339]: data_encoding
+[2m   0.580s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [183/339]: hyper
+[2m   0.580s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [184/339]: quote
+[2m   0.580s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [185/339]: idna_adapter
+[2m   0.580s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [186/339]: dioxus_rsx
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [187/339]: enumset_derive
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [188/339]: const_serialize_macro
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [189/339]: utf8_iter
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [190/339]: base64
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [191/339]: ipnet
+[2m   0.581s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [192/339]: build-script-build
+[2m   0.582s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [193/339]: web_sys
+[2m   0.582s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [194/339]: idna
+[2m   0.582s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [195/339]: dioxus_core_macro
+[2m   0.582s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [196/339]: syn
+[2m   0.583s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [197/339]: hyper_util
+[2m   0.583s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [198/339]: enumset
+[2m   0.583s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [200/339]: tower
+[2m   0.583s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [201/339]: dioxus_hooks
+[2m   0.583s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [202/339]: build-script-build
+[2m   0.584s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [203/339]: euclid
+[2m   0.584s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [204/339]: dioxus_html_internal_macro
+[2m   0.584s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [206/339]: const_format
+[2m   0.584s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [207/339]: keyboard_types
+[2m   0.584s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [208/339]: encoding_rs
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [209/339]: build-script-build
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [210/339]: foreign_types_shared
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [211/339]: unicase
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [212/339]: build-script-build
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [213/339]: dioxus_cli_config
+[2m   0.585s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [214/339]: xxhash_rust
+[2m   0.586s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [215/339]: url
+[2m   0.586s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [217/339]: proc_macro2_diagnostics
+[2m   0.586s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [220/339]: build-script-build
+[2m   0.586s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [221/339]: dioxus_html
+[2m   0.587s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [222/339]: server_fn_macro
+[2m   0.587s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [223/339]: foreign_types
+[2m   0.587s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [224/339]: serde
+[2m   0.587s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [225/339]: tungstenite
+[2m   0.587s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [226/339]: serde_urlencoded
+[2m   0.588s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [227/339]: openssl_sys
+[2m   0.588s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [228/339]: wasm_bindgen_futures
+[2m   0.588s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [229/339]: openssl_macros
+[2m   0.588s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [230/339]: spin
+[2m   0.588s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [231/339]: build-script-build
+[2m   0.589s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [232/339]: tokio_tungstenite
+[2m   0.589s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [234/339]: const_serialize
+[2m   0.589s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [235/339]: openssl
+[2m   0.589s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [236/339]: dioxus_document
+[2m   0.589s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [237/339]: dioxus_rsx
+[2m   0.590s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [238/339]: gloo_utils
+[2m   0.590s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [239/339]: axum_core
+[2m   0.590s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [240/339]: build-script-build
+[2m   0.590s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [241/339]: dioxus_history
+[2m   0.590s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [242/339]: multer
+[2m   0.591s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [244/339]: futures_executor
+[2m   0.591s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [245/339]: serde_path_to_error
+[2m   0.591s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [246/339]: axum_macros
+[2m   0.591s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [247/339]: dioxus_config_macro
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [248/339]: half
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [249/339]: unicase
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [250/339]: ciborium_io
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [251/339]: matchit
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [252/339]: lazy_static
+[2m   0.592s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [253/339]: hashbrown
+[2m   0.593s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [254/339]: openssl_probe
+[2m   0.593s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [255/339]: iana_time_zone
+[2m   0.593s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [256/339]: futures
+[2m   0.593s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [257/339]: sharded_slab
+[2m   0.593s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [258/339]: axum
+[2m   0.594s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [259/339]: ciborium_ll
+[2m   0.594s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [260/339]: mime_guess
+[2m   0.594s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [261/339]: dioxus_lib
+[2m   0.594s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [262/339]: dashmap
+[2m   0.595s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [264/339]: manganis_core
+[2m   0.595s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [265/339]: gloo_net
+[2m   0.595s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [266/339]: native_tls
+[2m   0.595s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [267/339]: chrono
+[2m   0.595s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [268/339]: server_fn_macro_default
+[2m   0.596s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [269/339]: wasm_streams
+[2m   0.596s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [270/339]: const_serialize
+[2m   0.596s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [271/339]: tungstenite
+[2m   0.596s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [272/339]: tower
+[2m   0.596s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [273/339]: serde_qs
+[2m   0.597s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [274/339]: dioxus_devtools_types
+[2m   0.597s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [275/339]: lru
+[2m   0.597s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [276/339]: build-script-build
+[2m   0.597s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [277/339]: thread_local
+[2m   0.598s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [278/339]: send_wrapper
+[2m   0.598s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [279/339]: xxhash_rust
+[2m   0.598s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [280/339]: http_range_header
+[2m   0.598s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [281/339]: slab
+[2m   0.598s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [282/339]: askama_escape
+[2m   0.599s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [283/339]: dunce
+[2m   0.599s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [284/339]: inventory
+[2m   0.599s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [285/339]: manganis_core
+[2m   0.599s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [286/339]: tokio_native_tls
+[2m   0.599s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [287/339]: tracing_subscriber
+[2m   0.600s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [288/339]: dioxus_devtools
+[2m   0.600s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [290/339]: dioxus_ssr
+[2m   0.600s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [291/339]: server_fn
+[2m   0.600s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [292/339]: tower_http
+[2m   0.600s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [293/339]: dioxus_router_macro
+[2m   0.601s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [294/339]: manganis_macro
+[2m   0.601s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [295/339]: dioxus_isrg
+[2m   0.601s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [296/339]: dioxus_interpreter_js
+[2m   0.601s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [297/339]: ciborium
+[2m   0.601s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [298/339]: dioxus_server_macro
+[2m   0.602s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [299/339]: tokio_stream
+[2m   0.602s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [300/339]: tracing_futures
+[2m   0.602s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [301/339]: iri_string
+[2m   0.602s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [302/339]: urlencoding
+[2m   0.602s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [303/339]: zeroize
+[2m   0.603s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [304/339]: dioxus_fullstack
+[2m   0.603s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [305/339]: tower_http
+[2m   0.603s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [306/339]: manganis
+[2m   0.603s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [307/339]: hyper_tls
+[2m   0.604s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [308/339]: dioxus_logger
+[2m   0.604s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [309/339]: libsqlite3_sys
+[2m   0.604s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [310/339]: hashlink
+[2m   0.604s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [311/339]: fallible_streaming_iterator
+[2m   0.605s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [312/339]: fallible_iterator
+[2m   0.605s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [313/339]: dioxus_router
+[2m   0.605s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [314/339]: rustls_pki_types
+[2m   0.605s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [315/339]: rusqlite
+[2m   0.605s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [316/339]: dioxus
+[2m   0.606s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Compiling [317/339]: reqwest
+[2m   0.606s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Bundling app...
+[2m   0.606s[0m [32m INFO[0m [2mdx::build::builder[0m[2m:[0m Running wasm-bindgen...
+[2m   0.798s[0m [34mDEBUG[0m [2mdx::build::bundle[0m[2m:[0m wasm-bindgen complete in 228.418141ms dx_src=bundle
+[2m   0.798s[0m [32m INFO[0m [2mdx::build::bundle[0m[2m:[0m Running optimization with wasm-opt... dx_src=build
+[2m   0.844s[0m [34mDEBUG[0m [2mdx::build::builder[0m[2m:[0m Setting builder to failed state
+[2m   0.844s[0m [31mERROR[0m [2mdx::build::builder[0m[2m:[0m err=Other(Failed to write main executable
+
+Caused by:
+    0: Failed to read module
+    1: [parse exception: invalid code after misc prefix: 17 (at 0:989568)]) 
+[2m   0.845s[0m [31mERROR[0m [2mdx[0m[2m:[0m err=Other(Failed to write main executable
+
+Caused by:
+    0: Failed to read module
+    1: [parse exception: invalid code after misc prefix: 17 (at 0:989568)]) 
