@@ -25,7 +25,8 @@
       };
 
       rustBuildInputs = [
-        inputs'.dioxus.packages.dioxus-cli
+        # inputs'.dioxus.packages.dioxus-dev
+        pkgs.dioxus-cli
         pkgs.openssl
         pkgs.libiconv
         pkgs.pkg-config

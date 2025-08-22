@@ -8,10 +8,12 @@
       hooks = {
         # Nix formatting and linting (from .dotfiles)
         nixpkgs-fmt.enable = true;
-        statix.enable = true;
+        statix = {
+          enable = true;
+          excludes = [ "nix/modules/rust.nix" ]; # Exclude template files that might have intentional dead code
+        };
         deadnix = {
           enable = true;
-          excludes = [ "nix/modules/template.nix" ]; # Exclude template files that might have intentional dead code
         };
 
         # Rust formatting and linting

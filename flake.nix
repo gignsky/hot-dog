@@ -11,8 +11,8 @@
 
     rust-overlay.url = "github:oxalica/rust-overlay";
     dioxus = {
-      url = "github:DioxusLabs/dioxus";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:DioxusLabs/dioxus/v0.6";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Dev tools
