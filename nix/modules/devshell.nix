@@ -6,10 +6,9 @@ _: {
     , ...
     }:
     {
-      devShells.default = pkgs.mkShell {
+      devShells.old = pkgs.mkShell {
         name = "hot_dog-shell";
         inputsFrom = [
-          self'.devShells.rust
           config.pre-commit.devShell # See ./nix/modules/pre-commit.nix
         ];
         packages = with pkgs; [
