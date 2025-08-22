@@ -23,6 +23,7 @@
       };
 
       rustBuildInputs = [
+        pkgs.dioxus-cli
         pkgs.openssl
         pkgs.libiconv
         pkgs.pkg-config
