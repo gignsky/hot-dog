@@ -6,13 +6,14 @@
   ];
 
   perSystem =
-    { config
-    , self'
-    , inputs'
-    , pkgs
-    , lib
-    , system
-    , ...
+    {
+      config,
+      self',
+      inputs',
+      pkgs,
+      lib,
+      system,
+      ...
     }:
     let
       rustToolchain = pkgs.rust-bin.stable.latest.default.override {
@@ -32,6 +33,7 @@
         pkgs.pkg-config
         pkgs.sqlite
         pkgs.wasm-bindgen-cli
+        pkgs.binaryen
       ]
       ++ lib.optionals pkgs.stdenv.isLinux [
         pkgs.lld
@@ -57,9 +59,9 @@
 
       rustPackage =
         package:
-        { binary ? package
-        , features ? [ ]
-        ,
+        {
+          binary ? package,
+          features ? [ ],
         }:
         (pkgs.makeRustPlatform {
           cargo = rustToolchain;
