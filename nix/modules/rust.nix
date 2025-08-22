@@ -8,6 +8,7 @@
   perSystem =
     { config
     , self'
+    , inputs'
     , pkgs
     , lib
     , system
@@ -24,7 +25,7 @@
       };
 
       rustBuildInputs = [
-        pkgs.dioxus-cli
+        inputs'.dioxus.packages.dioxus-cli
         pkgs.openssl
         pkgs.libiconv
         pkgs.pkg-config
